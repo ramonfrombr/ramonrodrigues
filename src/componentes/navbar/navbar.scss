@@ -11,7 +11,7 @@
     transition: all 0.5s ease;
 
     .wrapper {
-        padding: 20px 20px;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -22,17 +22,35 @@
             align-items: center;
 
             .logo {
-                font-weight: 700;
-                font-size: 20px;
-                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                height: 45px;
                 margin-right: 10px;
+                text-decoration: none;
+                
                 color: inherit;
+                border-radius: 60%;
+                background-color: white;
+
+                img {
+                    object-fit: cover;
+                }
             }
 
             .containerItem {
                 display: flex;
                 align-items: center;
                 margin-left: 15px;
+
+                @include mobile {
+                    display: none;
+                }
+
+                a {
+                    color: inherit;
+                }
 
                 .icone {
                     font-size: 18px;
@@ -42,6 +60,19 @@
                 span {
                     font-size: 15px;
                     font-weight: 500;
+                }
+
+                
+            }
+
+            .containerBandeira {
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
+
+                .icone-bandeira {
+                    height: 15px;
+                    margin-left: 10px;
                 }
             }
         }

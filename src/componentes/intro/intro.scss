@@ -1,3 +1,128 @@
+@import "../../global.scss";
+
 .intro {
-    background-color: lightgreen;
+
+    background-color: white;
+    display: flex;
+    margin-bottom: 100px;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .esquerda {
+
+        flex: 0.5; 
+        overflow: hidden;
+
+        .containerImagem {
+
+            width: 700px;
+            height: 700px;
+            background-color: crimson;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+
+            @include mobile {
+                align-items: flex-start;
+            }
+
+            img {
+                height: 90%;
+
+                @include mobile {
+                    height: 50%;
+                }
+            }
+        }
+    }
+
+    .direita {
+
+        flex: 0.5;
+        position: relative;
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+            }
+
+            h1 {    
+                font-size: 60px;
+                margin: 10px 0;
+
+                @include mobile {
+                    font-size: 40px;
+                }
+            }
+
+            h2 {
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 30px;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+
+                span {
+                    font-size: inherit;
+                    color: crimson;
+                }
+
+                .ityped-cursor {
+                    animation: piscarCursor 1s infinite;
+                }
+
+                @keyframes piscarCursor {
+                    
+                    50% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+
+            img {
+                width: 30px;
+                animation: piscarSeta 2s infinite;
+            }
+
+            @keyframes piscarSeta {
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+                
+            }
+        }
+    }
 }

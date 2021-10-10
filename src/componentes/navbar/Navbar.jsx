@@ -1,7 +1,9 @@
 import React from 'react';
-import './navbar.scss'
+import './navbar.scss';
 
-import { FaUserAlt, FaEnvelope } from 'react-icons/fa';
+import Flags from 'country-flag-icons/react/3x2';
+
+import { FaWhatsapp, FaEnvelope, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Navbar({ menuAberto, definirMenuAberto }) {
     return (
@@ -9,18 +11,55 @@ export default function Navbar({ menuAberto, definirMenuAberto }) {
             <div className="wrapper">
                 <div className="esquerda">
 
-                    <a className="logo" href="#intro">logo</a>
+                    <a className="logo" href="#intro">
+                        <img style={{ height: '40px' }} src="assets/avatar.png" alt="" />
+                    </a>
 
                     <div className="containerItem">
-                        <FaUserAlt className='icone'/> 
-                        <span>+1 123 456 789</span>
+                        <FaWhatsapp className='icone'/> 
+                        <span>+55 27 98149-1002</span>
                     </div>
 
                     <div className="containerItem">
                         <FaEnvelope className='icone'/>
-                        <span>contact@company.com</span>
+                        <span>ramonfrombr@gmail.com</span>
+                    </div>
+
+                    <div className="containerItem">
+                        <a href="https://github.com/ramonfrombr">
+                            <FaGithub className='icone'/>
+                        </a>
+                    </div>
+
+                    <div className="containerItem">
+                        <a href="https://www.linkedin.com/in/ramon-rodrigues-533021151/">
+                            <FaLinkedin className='icone'/>
+                        </a>
+                    </div>
+
+                    <div className="containerItem">
+                        <a href="https://www.instagram.com/ramonrodriguesomero/">
+                            <FaInstagram className='icone'/>
+                        </a>
+                    </div>
+
+                    <div className="containerBandeira">
+                        <Flags.US title="United States" className="icone-bandeira"/>
+                    </div>
+
+                    <div className="containerBandeira">
+                        <Flags.BR title="Brasil" className="icone-bandeira"/>
+                    </div>
+
+                    <div className="containerBandeira">
+                        <Flags.ES title="España" className="icone-bandeira"/>
+                    </div>
+
+                    <div className="containerBandeira">
+                        <Flags.FR title="France" className="icone-bandeira"/>
                     </div>
                 </div>
+
                 <div className="direita">
                     <div className="hamburger" onClick={() => definirMenuAberto(!menuAberto)}>
                         <span className='linha1'></span>

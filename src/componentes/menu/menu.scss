@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .menu {
+
     width: 300px;
     height: 100vh;
     background-color: $corPrincipal;
@@ -17,29 +18,34 @@
 
     // Se existir uma classe 'ativo
     &.ativo {
+
         right: 0;
     }
 
     ul {
+
         margin: 0;
         padding: 0;
         list-style-type: none;
-        font-size: 30px;
         font-weight: 300;
         color: white;
         width: 60%;
 
         li {
 
+            font-size: 30px !important;
+            margin-right: 0;
             margin-bottom: 20px;
 
             a {
+
                 font-size: inherit;
                 color: inherit;
                 text-decoration: none;
             }
 
             &:hover {
+                
                 font-weight: 500;
             }
         }

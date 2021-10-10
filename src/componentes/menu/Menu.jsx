@@ -21,7 +21,7 @@ export default function Menu({ menuAberto, definirMenuAberto }) {
 
                 <LinkMenu
                     id={"portfolio"}
-                    texto={"Potfolio"}
+                    texto={"Portfolio"}
                     definirMenuAberto={definirMenuAberto} />
 
                 <LinkMenu
