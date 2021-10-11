@@ -6,7 +6,7 @@ export default function Referencias() {
     const dados = [
         {
           id: 1,
-          nome: "Tom Dure",
+          nome: "Tom Due",
           titulo: "Senior Developer",
           imagem:
             "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
