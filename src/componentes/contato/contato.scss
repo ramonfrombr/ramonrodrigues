@@ -11,6 +11,10 @@
     .esquerda {
         flex: 1;
         overflow: hidden;
+        
+        @include mobile {
+            flex: none;
+        }
 
         img {
             height: 100%;

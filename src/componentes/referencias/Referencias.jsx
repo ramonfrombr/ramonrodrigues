@@ -1,5 +1,5 @@
 import React from 'react';
-import './referencias.scss'
+import './referencias.scss';
 
 export default function Referencias() {
 
