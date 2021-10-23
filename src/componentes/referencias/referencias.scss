@@ -1,128 +1,140 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .referencias {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
-    @include mobile {
-        justify-content: space-around;
-    }
+	@include mobile {
+		justify-content: space-around;
+	}
 
-    h1 {
-        font-size: 50px;
+	h1 {
+		font-size: 50px;
 
-        @include mobile {
-            font-size: 20px;
-        }
-    }
+		@include mobile {
+			font-size: 20px;
+		}
+	}
 
-    .container {
-        width: 100%;
-        height: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+	.container {
+		width: 100%;
+		height: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-        @include mobile {
-            flex-direction: column;
-            height: 90%;
-        }
+		@include mobile {
+			flex-direction: column;
+			height: 90%;
+		}
 
-        .cartao {
-            width: 250px;
-            height: 70%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px -8px black;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 20px;
-            transition: all 1s ease;
+		.cartao {
+			width: 250px;
+			height: 70%;
+			border-radius: 10px;
+			box-shadow: 0px 0px 15px -8px black;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding: 20px;
+			transition: all 1s ease;
 
-            @include mobile {
-                height: 180px;
-                margin: 10px 0;
-            }
+			@include mobile {
+				overflow: visible;
+				padding: 10px;
+				height: 180px;
+				margin: 10px 0;
+			}
 
-            &.destaque {
-                width: 300px;
-                height: 75%;
-                margin: 0 30px;
+			&.destaque {
+				width: 300px;
+				height: 75%;
+				margin: 0 30px;
 
-                @include mobile {
-                    width: 250px;
-                    height: 180px;
-                    margin: 10px;
-                }
-            }
+				@include mobile {
+					width: 250px;
+					height: 180px;
+					margin: 10px;
+				}
+			}
 
-            &:hover {
-                transform: scale(1.1);
-            }
+			&:hover {
+				transform: scale(1.1);
+			}
 
-            .cabecalho {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+			.cabecalho {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 
-                img {
-                    &.esquerda, &.direita {
-                        height: 25px;
-                    }
+				@include mobile {
+					overflow: visible;
+				}
 
-                    &.usuario {
-                        height: 60px;
-                        width: 60px;
-                        border-radius: 50%;
-                        object-fit: cover;
-                        margin: 0 30px;
+				img {
+					&.esquerda,
+					&.direita {
+						height: 25px;
+					}
 
-                        @include mobile {
-                            width: 30px;
-                            height: 30px;
-                        }
-                    }
-                }
-            }
+					&.usuario {
+						height: 60px;
+						width: 60px;
+						border-radius: 50%;
+						object-fit: cover;
+						margin: 0 30px;
 
-            .conteudo {
-                padding: 10px;
-                border-radius: 10px;
-                background-color: rgb(255, 249, 249);
+						@include mobile {
+							width: 30px;
+							height: 30px;
+						}
+					}
+				}
+			}
 
-                @include mobile {
-                    font-size: 12px;
-                    padding: 5px;
-                }
-            }
+			.conteudo {
+				padding: 10px;
+				border-radius: 10px;
+				background-color: rgb(255, 249, 249);
 
-            .rodape {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
+				@include mobile {
+					overflow: visible;
+					font-size: 12px;
+					padding: 5px;
+				}
+			}
 
-                h3 {
-                    margin-bottom: 5px;
+			.rodape {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
 
-                    @include mobile {
-                        font-size: 14px;
-                        margin-bottom: 0;
-                        padding: 5px;
-                    }
-                }
+				@include mobile {
+					overflow: visible;
+				}
 
-                h4 {
-                    color: grey;
+				h3 {
+					margin-bottom: 5px;
 
-                    @include mobile {
-                        font-size: 13px;
-                        padding: 5px;
-                    }
-                }
-            }
-        }
-    }
+					@include mobile {
+						font-size: 14px;
+						margin-bottom: 0;
+						padding: 5px;
+					}
+				}
+
+				h4 {
+					color: grey;
+
+					@include mobile {
+						font-size: 13px;
+						padding: 5px;
+					}
+				}
+			}
+		}
+	}
 }
