@@ -20,7 +20,7 @@ import {
 	portfolioConteudo,
 } from "../../dados";
 
-export default function Portfolio() {
+export default function Portfolio({ idioma }) {
 	const [selecionado, definirSelecionado] = useState("destaque");
 
 	const [dados, definirDados] = useState([]);
@@ -28,28 +28,22 @@ export default function Portfolio() {
 	const lista = [
 		{
 			id: "destaque",
-			titulo: "Destaque",
+			titulo: idioma.destaque,
 			icone: <FaStar className="icone-destaque" />,
 		},
 		{
 			id: "web",
-			titulo: "Aplicativos Web",
+			titulo: idioma.web,
 			icone: <FaGlobe />,
 		},
 		{
 			id: "mobile",
-			titulo: "Aplicativos Mobile",
+			titulo: idioma.mobile,
 			icone: <FaMobileAlt />,
 		},
-		/*
-        {
-            id: 'design',
-            titulo: "Design",
-            icone: <FaPencilRuler />,
-        },*/
 		{
 			id: "conteudo",
-			titulo: "Conteúdo",
+			titulo: idioma.conteudo,
 			icone: <FaNewspaper />,
 		},
 	];

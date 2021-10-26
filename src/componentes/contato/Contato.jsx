@@ -1,42 +1,41 @@
-import React, {useState}  from 'react';
-import './contato.scss'
+import React, { useState } from "react";
+import "./contato.scss";
 
-export default function Contato() {
+export default function Contato({ idioma }) {
+	const [mensagem, definirMensagem] = useState();
 
-    const [mensagem, definirMensagem] = useState();
+	const naoRecarregarPagina = (evento) => {
+		evento.preventDefault();
+		definirMensagem(true);
+	};
 
-    const naoRecarregarPagina = (evento) => {
-        evento.preventDefault()
-        definirMensagem(true)
-    }
+	return (
+		<div className="contato" id="contato">
+			<div className="esquerda">
+				<img src="assets/shake.svg" alt="" />
+			</div>
 
-    return (
-        <div className='contato' id='contato'>
-            <div className="esquerda">
-                <img src="assets/shake.svg" alt="" />
-            </div>
+			<div className="direita">
+				<h2>{idioma.contato}</h2>
 
-            <div className="direita">
-                <h2>Contato</h2>
+				<form action="" onSubmit={naoRecarregarPagina}>
+					<input type="email" placeholder={idioma.email} />
 
-                <form action="" onSubmit={naoRecarregarPagina}>
-                    <input type="email" placeholder="Email" />
+					<textarea
+						placeholder={idioma.mensagem}
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+					></textarea>
 
-                    <textarea placeholder="Mensagem" name="" id="" cols="30" rows="10"></textarea>
+					<button>{idioma.enviar}</button>
+				</form>
 
-                    <button>Enviar</button>
-                </form>
-
-                <p style={{ color: 'green' }}>
-                    
-                {
-                    mensagem ? <span>Obrigado pela mensagem! Entrarei em contato com você em breve :)</span>
-                    :
-                    <span>&nbsp;</span>
-                }
-                    
-                </p>
-            </div>
-        </div>
-    )
+				<p style={{ color: "green" }}>
+					{mensagem ? <span>{idioma.mensagemFinal}</span> : <span>&nbsp;</span>}
+				</p>
+			</div>
+		</div>
+	);
 }

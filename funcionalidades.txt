@@ -1,0 +1,21 @@
+# INTRO
+
+[ ] - Implementar a substituição das profissões quando o idioma for alterado sem que as profissões fiquem duplicadas
+
+
+# PORTFOLIO
+
+[ ] - Traduzir nome do projeto dentro da div do projeto quando o idioma for alterado
+
+
+# PROJETOS
+
+[ ] - Definir os 3 projetos e as descrições
+
+
+# TESTEMUNHOS
+
+[ ] - Definir as 3 referências
+[ ] - Definir os comentários
+[ ] - Definir o título da pessoa
+

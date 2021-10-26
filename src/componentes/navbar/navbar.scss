@@ -1,127 +1,124 @@
 @import "../../global.scss";
 
 .navbar {
-    width: 100%;
-    height: 70px;
-    background-color: white;
-    color: $corPrincipal;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    transition: all 0.5s ease;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	color: $corPrincipal;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	transition: all 0.5s ease;
 
-    .wrapper {
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+	.wrapper {
+		padding: 10px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-        .esquerda {
+		.esquerda {
+			display: flex;
+			align-items: center;
 
-            display: flex;
-            align-items: center;
+			.logo {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 45px;
+				height: 45px;
+				margin-right: 10px;
+				text-decoration: none;
 
-            .logo {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 45px;
-                height: 45px;
-                margin-right: 10px;
-                text-decoration: none;
-                
-                color: inherit;
-                border-radius: 60%;
-                background-color: white;
+				color: inherit;
+				border-radius: 60%;
+				background-color: white;
 
-                img {
-                    object-fit: cover;
-                }
-            }
+				img {
+					object-fit: cover;
+				}
+			}
 
-            .containerItem {
-                display: flex;
-                align-items: center;
-                margin-left: 15px;
+			.containerItem {
+				display: flex;
+				align-items: center;
+				margin-left: 15px;
 
-                @include mobile {
-                    display: none;
-                }
+				@include mobile {
+					display: none;
+				}
 
-                a {
-                    color: inherit;
-                }
+				a {
+					color: inherit;
+				}
 
-                .icone {
-                    font-size: 18px;
-                    margin-right: 5px;
-                }
+				.icone {
+					font-size: 18px;
+					margin-right: 5px;
+				}
 
-                span {
-                    font-size: 15px;
-                    font-weight: 500;
-                }
+				span {
+					font-size: 15px;
+					font-weight: 500;
+				}
+			}
 
-                
-            }
+			.containerBandeira {
+				display: flex;
+				align-items: center;
+				margin-left: 15px;
 
-            .containerBandeira {
-                display: flex;
-                align-items: center;
-                margin-left: 15px;
+				:hover {
+					cursor: pointer;
+				}
 
-                .icone-bandeira {
-                    height: 15px;
-                    margin-left: 10px;
-                }
-            }
-        }
+				.icone-bandeira {
+					height: 15px;
+					margin-left: 10px;
+				}
+			}
+		}
 
-        .direita {
+		.direita {
+			.hamburger {
+				width: 32px;
+				height: 25px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				cursor: pointer;
 
-            .hamburger {
-                width: 32px;
-                height: 25px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;
-                
-                span {
-                    width: 100%;
-                    height: 3px;
-                    background-color: $corPrincipal;
-                    transform-origin: left;
-                    transition: all 1s ease;
-                }
-            }
-        }
-    }
+				span {
+					width: 100%;
+					height: 3px;
+					background-color: $corPrincipal;
+					transform-origin: left;
+					transition: all 1s ease;
+				}
+			}
+		}
+	}
 
-    /* Se houver um elemento com a classe 'ativo' */
-    &.ativo {
+	/* Se houver um elemento com a classe 'ativo' */
+	&.ativo {
+		background-color: $corPrincipal;
+		color: white;
 
-        background-color: $corPrincipal;
-        color: white;
+		.hamburger {
+			span {
+				&:first-child {
+					background-color: white;
+					transform: rotate(45deg);
+				}
 
-        .hamburger {
+				&:nth-child(2) {
+					opacity: 0;
+				}
 
-            span {
-
-                &:first-child {
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
-
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                &:last-child {
-                    background-color: white;
-                    transform: rotate(-45deg);
-                }
-            }
-        }
-    }
+				&:last-child {
+					background-color: white;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
 }

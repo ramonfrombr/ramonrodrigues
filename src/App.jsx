@@ -9,27 +9,48 @@ import Projetos from "./componentes/projetos/Projetos";
 import Referencias from "./componentes/referencias/Referencias";
 import Contato from "./componentes/contato/Contato";
 
+import { conteudo } from "./dados";
+
 import "./global.scss";
 import "./app.scss";
 
 function App() {
 	const [menuAberto, definirMenuAberto] = useState(false);
 
+	const [idioma, definirIdioma] = useState(conteudo[0]);
+
+	const escolherIdioma = (indice) => {
+		definirIdioma(conteudo[indice]);
+	};
+
 	return (
 		<div className="app">
-			<Navbar menuAberto={menuAberto} definirMenuAberto={definirMenuAberto} />
+			<Navbar
+				menuAberto={menuAberto}
+				definirMenuAberto={definirMenuAberto}
+				escolherIdioma={escolherIdioma}
+			/>
 
-			<Menu menuAberto={menuAberto} definirMenuAberto={definirMenuAberto} />
+			<Menu
+				idioma={idioma.menu}
+				menuAberto={menuAberto}
+				definirMenuAberto={definirMenuAberto}
+			/>
 
 			<div className="secoes">
-				<Intro />
-				<div className="secaoHabilidades">
+				<Intro idioma={idioma.intro} />
+
+				{/*
+                
+                <div className="secaoHabilidades">
 					<Habilidades />
 				</div>
-				<Portfolio />
-				<Projetos />
-				<Referencias />
-				<Contato />
+                */}
+
+				<Portfolio idioma={idioma.portfolio} />
+				<Projetos idioma={idioma.projetos} />
+				<Referencias idioma={idioma.referencias} />
+				<Contato idioma={idioma.contato} />
 			</div>
 		</div>
 	);

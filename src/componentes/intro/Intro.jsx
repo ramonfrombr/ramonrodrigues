@@ -24,19 +24,33 @@ import react from "../../imagens/react.png";
 import redux from "../../imagens/redux.png";
 import sass from "../../imagens/sass.png";
 import styledcomponents from "../../imagens/styledcomponents.png";
+import { configureStore } from "@reduxjs/toolkit";
 
-export default function Intro() {
+export default function Intro({ idioma }) {
+	/*
+
+    // É PRECISO CORRIGIR A DUPLICAÇÃO DAS PROFISSÕES
+
+
 	// Seleciona o span para aplicar efeito de digitação
 	const textoReferencia = useRef();
 
 	useEffect(() => {
+		const cursor = document.getElementsByClassName("ityped-cursor");
+
+		// Remove cursor duplicado
+		if (cursor[0]) {
+			cursor[0].remove();
+		}
+
 		init(textoReferencia.current, {
 			showCursor: true,
 			backDelay: 1500,
 			backSpeed: 60,
-			strings: ["Designer", "Web Developer", "Software Engineer"],
+			strings: [idioma.profissao1, idioma.profissao2, idioma.profissao3],
 		});
-	}, []);
+	}, [idioma]);
+    */
 
 	return (
 		<div className="intro" id="intro">
@@ -48,11 +62,14 @@ export default function Intro() {
 
 			<div className="direita">
 				<div className="wrapper">
-					<h2>Olá, eu sou</h2>
-					<h1>Ramon Rodrigues</h1>
-					<h3>
-						Freelance <span ref={textoReferencia}></span>
+					<h2>{idioma.ola}</h2>
+					<h1>{idioma.nome}</h1>
+
+					{/*
+					<h3 id="itypedH3">
+						<span ref={textoReferencia}></span>
 					</h3>
+                    */}
 
 					<div className="techStackContainer">
 						<div className="techStack">

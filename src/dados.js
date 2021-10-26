@@ -2,16 +2,335 @@ import tesla from "./imagens/tesla-web.png";
 
 export const conteudo = [
 	{
-		id: "portugues",
+		id: "ingles",
+		menu: {
+			intro: "Home",
+			portfolio: "Portfolio",
+			projetos: "Projects",
+			referencias: "Testimonials",
+			contato: "Contact",
+		},
+		intro: {
+			ola: "Hi, I am",
+			nome: "Ramon Rodrigues",
+			profissao1: "Web Developer",
+			profissao2: "Software Engineer",
+			profissao3: "Designer",
+		},
+		portfolio: {
+			destaque: "Featured",
+			web: "Web Apps",
+			mobile: "Mobile Apps",
+			conteudo: "Content",
+		},
+		projetos: {
+			projeto1: {
+				titulo: "IMPERAtrading",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+			projeto2: {
+				titulo: "Aprenda Agora",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+			projeto3: {
+				titulo: "CS50x em Português",
+				descricao: "O curso de introdução às faculdades intelectuais ",
+				acessar: "Acessar",
+			},
+		},
+		referencias: {
+			nome_secao: "Testimonials",
+			referencias: [
+				{
+					id: 1,
+					nome: "Tom Due",
+					titulo: "Senior Developer",
+					imagem:
+						"https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/twitter.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+				},
+				{
+					id: 2,
+					nome: "Alex Kalinski",
+					titulo: "Co-Founder of DELKA",
+					imagem:
+						"https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/youtube.png",
+					descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+					destaque: true,
+				},
+				{
+					id: 3,
+					nome: "Martin Harold",
+					titulo: "CEO of ALBI",
+					imagem:
+						"https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/linkedin.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+				},
+			],
+		},
+		contato: {
+			contato: "Contact",
+			email: "Email",
+			mensagem: "Message",
+			enviar: "Send",
+			mensagemFinal: "Thank you for the message! I will contact you soon :)",
+		},
 	},
 	{
-		id: "ingles",
+		id: "portugues",
+		menu: {
+			intro: "Intro",
+			portfolio: "Portfolio",
+			projetos: "Projetos",
+			referencias: "Referências",
+			contato: "Contato",
+		},
+		intro: {
+			ola: "Olá, eu sou",
+			nome: "Ramon Rodrigues",
+			profissao1: "Desenvolvedor Web",
+			profissao2: "Engenheiro de Software",
+			profissao3: "Designer",
+		},
+		portfolio: {
+			destaque: "Destaque",
+			web: "Aplicativos Web",
+			mobile: "Aplicativos Mobile",
+			conteudo: "Conteúdo",
+		},
+		projetos: {
+			projeto1: {
+				titulo: "x",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+			projeto2: {
+				titulo: "x",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+			projeto3: {
+				titulo: "x",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+		},
+		referencias: {
+			nome_secao: "Referências",
+			referencias: [
+				{
+					id: 1,
+					nome: "Tom Due",
+					titulo: "Senior Developer",
+					imagem:
+						"https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/twitter.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+				},
+				{
+					id: 2,
+					nome: "Alex Kalinski",
+					titulo: "Co-Founder of DELKA",
+					imagem:
+						"https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/youtube.png",
+					descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+					destaque: true,
+				},
+				{
+					id: 3,
+					nome: "Martin Harold",
+					titulo: "CEO of ALBI",
+					imagem:
+						"https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/linkedin.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+				},
+			],
+		},
+		contato: {
+			contato: "Contato",
+			email: "Email",
+			mensagem: "Mensagem",
+			enviar: "Enviar",
+			mensagemFinal:
+				"Obrigado pela mensagem! Entrarei em contato com você em breve :)",
+		},
 	},
 	{
 		id: "espanhol",
+		menu: {
+			intro: "Home",
+			portfolio: "Portfolio",
+			projetos: "Proyectos",
+			referencias: "Testimonios",
+			contato: "Contacto",
+		},
+		intro: {
+			ola: "Hola, yo soy",
+			nome: "Ramon Rodrigues",
+			profissao1: "Desarrollador Web",
+			profissao2: "Ingeniero de Software",
+			profissao3: "Designer",
+		},
+		portfolio: {
+			destaque: "Destacado",
+			web: "Aplicaciones Web",
+			mobile: "Aplicaciones Móviles",
+			conteudo: "Contenido",
+		},
+		projetos: {
+			projeto1: {
+				titulo: "IMPERAtrading",
+				descricao: "",
+				acessar: "Acessar",
+			},
+			projeto2: {
+				titulo: "Aprenda Agora",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+			projeto3: {
+				titulo: "CS50x em Português",
+				descricao: "",
+				acessar: "Acessar",
+			},
+		},
+		referencias: {
+			nome_secao: "Testimonios",
+			referencias: [
+				{
+					id: 1,
+					nome: "Tom Due",
+					titulo: "Senior Developer",
+					imagem:
+						"https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/twitter.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+				},
+				{
+					id: 2,
+					nome: "Alex Kalinski",
+					titulo: "Co-Founder of DELKA",
+					imagem:
+						"https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/youtube.png",
+					descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+					destaque: true,
+				},
+				{
+					id: 3,
+					nome: "Martin Harold",
+					titulo: "CEO of ALBI",
+					imagem:
+						"https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/linkedin.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+				},
+			],
+		},
+		contato: {
+			contato: "Contacto",
+			email: "Email",
+			mensagem: "Mensaje",
+			enviar: "Enviar",
+			mensagemFinal:
+				"¡Gracias por el mensaje! Me pondré en contacto con usted pronto! :)",
+		},
 	},
 	{
 		id: "frances",
+		menu: {
+			intro: "Accueil",
+			portfolio: "Portefeuille",
+			projetos: "Projets",
+			referencias: "Témoignages",
+			contato: "Contact",
+		},
+		intro: {
+			ola: "Salut, je suis",
+			nome: "Ramon Rodrigues",
+			profissao1: "Web Developer",
+			profissao2: "Software Engineer",
+			profissao3: "Designer",
+		},
+		portfolio: {
+			destaque: "En vedette",
+			web: "Applications Web",
+			mobile: "Applications Mobiles",
+			conteudo: "Contenu",
+		},
+		projetos: {
+			projeto1: {
+				titulo: "x",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+			projeto2: {
+				titulo: "x",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+			projeto3: {
+				titulo: "x",
+				descricao: "x",
+				acessar: "Acessar",
+			},
+		},
+
+		referencias: {
+			nome_secao: "Témoignages",
+			referencias: [
+				{
+					id: 1,
+					nome: "Tom Due",
+					titulo: "Senior Developer",
+					imagem:
+						"https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/twitter.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+				},
+				{
+					id: 2,
+					nome: "Alex Kalinski",
+					titulo: "Co-Founder of DELKA",
+					imagem:
+						"https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/youtube.png",
+					descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+					destaque: true,
+				},
+				{
+					id: 3,
+					nome: "Martin Harold",
+					titulo: "CEO of ALBI",
+					imagem:
+						"https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+					icone: "assets/linkedin.png",
+					descricao:
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+				},
+			],
+		},
+		contato: {
+			contato: "Contato",
+			email: "E-mail",
+			mensagem: "Message",
+			enviar: "Envoyer",
+			mensagemFinal: "Merci pour la message!",
+		},
 	},
 ];
 
