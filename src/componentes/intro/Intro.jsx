@@ -7,22 +7,21 @@ import { useEffect, useRef } from "react";
 import "./intro.scss";
 
 import aws from "../../imagens/aws.png";
+import css from "../../imagens/css.png";
 import django from "../../imagens/django.png";
 import firebase from "../../imagens/firebase.png";
 import flask from "../../imagens/flask.png";
 import git from "../../imagens/git.png";
 import github from "../../imagens/github.png";
 import heroku from "../../imagens/heroku.jpg";
+import html from "../../imagens/html.png";
+import javascript from "../../imagens/javascript.png";
 import materialui from "../../imagens/materialui.png";
-
 import nodejs from "../../imagens/nodejs.png";
-
 import php from "../../imagens/php.png";
-
 import python from "../../imagens/python.png";
 import react from "../../imagens/react.png";
 import redux from "../../imagens/redux.png";
-
 import sass from "../../imagens/sass.png";
 import styledcomponents from "../../imagens/styledcomponents.png";
 

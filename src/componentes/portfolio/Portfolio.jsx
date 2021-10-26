@@ -95,10 +95,10 @@ export default function Portfolio() {
 
 			<div className="container">
 				{dados.map((dado) => (
-					<div className="item" key={dado.id}>
+					<a href={dado.link} target="_blank" className="item" key={dado.id}>
 						<img src={dado.img} alt="" />
 						<h3>{dado.titulo}</h3>
-					</div>
+					</a>
 				))}
 			</div>
 		</div>

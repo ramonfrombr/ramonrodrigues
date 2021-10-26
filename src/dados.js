@@ -1,3 +1,20 @@
+import tesla from "./imagens/tesla-web.png";
+
+export const conteudo = [
+	{
+		id: "portugues",
+	},
+	{
+		id: "ingles",
+	},
+	{
+		id: "espanhol",
+	},
+	{
+		id: "frances",
+	},
+];
+
 export const portfolioDestaque = [
 	{
 		id: 1,
@@ -34,8 +51,9 @@ export const portfolioDestaque = [
 export const portfolioWeb = [
 	{
 		id: 1,
-		titulo: "Facebook Clone",
-		img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+		titulo: "Tesla Clone",
+		img: tesla,
+		link: "https://tesla-clone-f64c8.web.app/",
 	},
 	{
 		id: 2,

@@ -104,8 +104,7 @@
 				margin-top: 50px;
 
 				@include mobile {
-					width: 100%;
-					margin-top: 20px;
+					display: none;
 				}
 
 				.techStack {

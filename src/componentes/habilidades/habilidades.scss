@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+.techStackContainer {
+	margin-top: 50px;
+
+	@include mobile {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	h2 {
+		color: rgb(173, 173, 173);
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+
+	.techStack {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		min-height: 40px;
+		width: 100%;
+		margin-bottom: 10px;
+
+		@include mobile {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		img {
+			height: 50px;
+
+			@include mobile {
+				height: 25px;
+			}
+		}
+	}
+}
