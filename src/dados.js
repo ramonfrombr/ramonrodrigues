@@ -1,4 +1,5 @@
 import tesla from "./imagens/tesla-web.png";
+import impera from "./imagens/impera-web.png";
 
 export const conteudo = [
 	{
@@ -376,13 +377,15 @@ export const portfolioWeb = [
 	},
 	{
 		id: 2,
-		titulo: "Amazon Clone",
-		img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
+		titulo: "Trading App",
+		img: impera,
+		link: "https://imperatrading.web.app/",
 	},
 	{
 		id: 3,
-		titulo: "Spotify Clone",
+		titulo: "Bakery Website",
 		img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
+		link: "",
 	},
 	{
 		id: 4,
