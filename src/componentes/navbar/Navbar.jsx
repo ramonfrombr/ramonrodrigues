@@ -35,19 +35,25 @@ export default function Navbar({
 					</div>
 
 					<div className="containerItem">
-						<a href="https://github.com/ramonfrombr">
+						<a target="_blank" href="https://github.com/ramonfrombr">
 							<FaGithub className="icone" />
 						</a>
 					</div>
 
 					<div className="containerItem">
-						<a href="https://www.linkedin.com/in/ramon-rodrigues-533021151/">
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/ramon-rodrigues-533021151/"
+						>
 							<FaLinkedin className="icone" />
 						</a>
 					</div>
 
 					<div className="containerItem">
-						<a href="https://www.instagram.com/ramonrodriguesomero/">
+						<a
+							target="_blank"
+							href="https://www.instagram.com/ramonrodriguesomero/"
+						>
 							<FaInstagram className="icone" />
 						</a>
 					</div>
