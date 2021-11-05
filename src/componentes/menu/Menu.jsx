@@ -22,11 +22,13 @@ export default function Menu({ idioma, menuAberto, definirMenuAberto }) {
 					definirMenuAberto={definirMenuAberto}
 				/>
 
-				<LinkMenu
-					id={"projetos"}
-					texto={idioma.projetos}
-					definirMenuAberto={definirMenuAberto}
-				/>
+				{/*
+                    <LinkMenu
+                        id={"projetos"}
+                        texto={idioma.projetos}
+                        definirMenuAberto={definirMenuAberto}
+                    />
+                */}
 
 				<LinkMenu
 					id={"referencias"}

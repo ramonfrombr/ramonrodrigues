@@ -16,9 +16,14 @@ export default function Contato({ idioma }) {
 			</div>
 
 			<div className="direita">
-				<h2>{idioma.contato}</h2>
+				<h2 style={{ marginBottom: "4em" }}>{idioma.contato}</h2>
 
-				<form action="" onSubmit={naoRecarregarPagina}>
+				<h4>Please send an email to ramonfrombr@gmail.com</h4>
+
+				{/*
+
+
+<form action="" onSubmit={naoRecarregarPagina}>
 					<input type="email" placeholder={idioma.email} />
 
 					<textarea
@@ -35,6 +40,9 @@ export default function Contato({ idioma }) {
 				<p style={{ color: "green" }}>
 					{mensagem ? <span>{idioma.mensagemFinal}</span> : <span>&nbsp;</span>}
 				</p>
+
+                    
+                     */}
 			</div>
 		</div>
 	);

@@ -48,7 +48,9 @@ function App() {
                 */}
 
 				<Portfolio idioma={idioma.portfolio} />
-				<Projetos idioma={idioma.projetos} />
+				{/*
+				<Projetos idioma={idioma.projetos} />*/}
+
 				<Referencias idioma={idioma.referencias} />
 				<Contato idioma={idioma.contato} />
 			</div>

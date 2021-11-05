@@ -2,6 +2,9 @@ import tesla from "./imagens/tesla-web.png";
 import impera from "./imagens/impera-web.png";
 import omelhor from "./imagens/omelhor-web.png";
 import whatsapp from "./imagens/whatsapp-web.png";
+import aprendaagora from "./imagens/aprendaagora-conteudo.png";
+import cs50 from "./imagens/cs50-conteudo.png";
+import fernando from "./imagens/fernando.jpg";
 
 export const conteudo = [
 	{
@@ -48,18 +51,18 @@ export const conteudo = [
 			referencias: [
 				{
 					id: 1,
-					nome: "Tom Due",
-					titulo: "Senior Developer",
-					imagem:
-						"https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-					icone: "assets/twitter.png",
+					nome: "Fernando Otone",
+					titulo: "Co-Founder of IMPERAtrading",
+					imagem: fernando,
+					link: "https://www.instagram.com/fernandotone/",
+					icone: "assets/instagram.png",
 					descricao:
-						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+						"Ramon has helped us bootstrap our business through a combination of great software and digital marketing strategy.",
 				},
 				{
 					id: 2,
-					nome: "Alex Kalinski",
-					titulo: "Co-Founder of DELKA",
+					nome: "Willian Homero",
+					titulo: "Manager of O Melhor de Feu Rosa",
 					imagem:
 						"https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
 					icone: "assets/youtube.png",
@@ -68,8 +71,8 @@ export const conteudo = [
 				},
 				{
 					id: 3,
-					nome: "Martin Harold",
-					titulo: "CEO of ALBI",
+					nome: "Joãozinho",
+					titulo: "Oasis Visual",
 					imagem:
 						"https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
 					icone: "assets/linkedin.png",
@@ -476,16 +479,19 @@ export const portfolioDesign = [
 export const portfolioConteudo = [
 	{
 		id: 1,
-		titulo: "Aprenda Agora",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+		titulo: "Aprenda Agora (Language Learning videos)",
+		img: aprendaagora,
+		link: "https://www.youtube.com/channel/UCo-122KSpoYersHovXL3Tow",
+	},
+
+	{
+		id: 2,
+		titulo: "CS50x em Português (Harvard University course)",
+		img: cs50,
+		link: "https://www.youtube.com/channel/UCJWJr7ZvX9QqyITKVA6-Kjw",
 	},
 
 	/*
-	{
-		id: 2,
-		titulo: "Content Rampa UI Design",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-	},
 	{
 		id: 3,
 		titulo: "Content E-commerce Web Design",

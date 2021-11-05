@@ -1,82 +1,81 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .contato {
-    background-color: white;
-    display: flex;
+	background-color: white;
+	display: flex;
 
-    @include mobile {
-        flex-direction: column;
-    }
+	@include mobile {
+		flex-direction: column;
+	}
 
-    .esquerda {
-        flex: 1;
-        overflow: hidden;
-        
-        @include mobile {
-            flex: none;
-        }
+	.esquerda {
+		flex: 1;
+		overflow: hidden;
 
-        img {
-            height: 100%;
-        }
-    }
+		@include mobile {
+			flex: none;
+		}
 
-    .direita {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        h2 {
-            font-size: 30px;
-        }
+		img {
+			height: 100%;
+		}
+	}
 
-        form {
-            width: 70%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+	.direita {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-            input {
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
+		h2 {
+			font-size: 30px;
+		}
 
-                @include mobile {
-                    width: 200px;
-                    height: 20px;
-                }
-            }
+		form {
+			width: 70%;
+			height: 70%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
 
-            textarea {
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
+			input {
+				width: 300px;
+				height: 30px;
+				font-size: 14px;
 
-                @include mobile {
-                    width: 200px;
-                    height: 100px;
-                }
-            }
+				@include mobile {
+					width: 200px;
+					height: 20px;
+				}
+			}
 
-            button {
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: crimson;
-                border: none;
-                border-radius: 10px;
-                font-weight: 500;
-                cursor: pointer;
+			textarea {
+				width: 300px;
+				height: 200px;
+				font-size: 14px;
 
-                &:focus {
-                    outline: none;
-                }
+				@include mobile {
+					width: 200px;
+					height: 100px;
+				}
+			}
 
-            }
-        }
-    }
+			button {
+				width: 150px;
+				height: 30px;
+				color: white;
+				background-color: rgb(20, 130, 220);
+				border: none;
+				border-radius: 10px;
+				font-weight: 500;
+				cursor: pointer;
+
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
 }

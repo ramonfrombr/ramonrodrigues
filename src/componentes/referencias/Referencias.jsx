@@ -21,7 +21,9 @@ export default function Referencias({ idioma }) {
 
 							<img className="usuario" src={dado.imagem} alt="" />
 
-							<img className="direita" src={dado.icone} alt="" />
+							<a target="_blank" href={dado.link}>
+								<img className="direita" src={dado.icone} alt="" />
+							</a>
 						</div>
 
 						<div className="conteudo">{dado.descricao}</div>

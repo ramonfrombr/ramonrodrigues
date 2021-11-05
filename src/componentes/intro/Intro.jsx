@@ -56,7 +56,7 @@ export default function Intro({ idioma }) {
 		<div className="intro" id="intro">
 			<div className="esquerda">
 				<div className="containerImagem">
-					<img src="assets/man.png" alt="" />
+					<img src="assets/avatar-grande.png" alt="" />
 				</div>
 			</div>
 
