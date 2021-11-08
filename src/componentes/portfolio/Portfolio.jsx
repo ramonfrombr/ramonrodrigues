@@ -15,22 +15,23 @@ import "./portfolio.scss";
 import {
 	portfolioDestaque,
 	portfolioWeb,
-	portfolioMobile,
+	portfolioReactNative,
 	//portfolioDesign,
 	portfolioConteudo,
 } from "../../dados";
 
 export default function Portfolio({ idioma }) {
-	const [selecionado, definirSelecionado] = useState("destaque");
+	const [selecionado, definirSelecionado] = useState("web");
 
 	const [dados, definirDados] = useState([]);
 
 	const lista = [
+		/*
 		{
 			id: "destaque",
 			titulo: idioma.destaque,
 			icone: <FaStar className="icone-destaque" />,
-		},
+		},*/
 		{
 			id: "web",
 			titulo: idioma.web,
@@ -57,7 +58,7 @@ export default function Portfolio({ idioma }) {
 				definirDados(portfolioWeb);
 				break;
 			case "mobile":
-				definirDados(portfolioMobile);
+				definirDados(portfolioReactNative);
 				break;
 			/*case "design":
                 definirDados(portfolioDesign);

@@ -2,8 +2,12 @@ import tesla from "./imagens/tesla-web.png";
 import impera from "./imagens/impera-web.png";
 import omelhor from "./imagens/omelhor-web.png";
 import whatsapp from "./imagens/whatsapp-web.png";
+
+import cryptomobile from "./imagens/crypto-mobile.png";
+
 import aprendaagora from "./imagens/aprendaagora-conteudo.png";
 import cs50 from "./imagens/cs50-conteudo.png";
+
 import fernando from "./imagens/fernando.jpg";
 
 export const conteudo = [
@@ -87,6 +91,8 @@ export const conteudo = [
 			mensagem: "Message",
 			enviar: "Send",
 			mensagemFinal: "Thank you for the message! I will contact you soon :)",
+			mensagemFinalTemporaria:
+				"Please contact me directly via WhatsApp, +55 27 98149 1002, or send an email to ramonfrombr@gmail.com",
 		},
 	},
 	{
@@ -170,6 +176,9 @@ export const conteudo = [
 			enviar: "Enviar",
 			mensagemFinal:
 				"Obrigado pela mensagem! Entrarei em contato com você em breve :)",
+
+			mensagemFinalTemporaria:
+				"Por favor, contate-me diretamente através do WhatsApp, +55 27 98149 1002, ou envie-me um email para ramonfrombr@gmail.com",
 		},
 	},
 	{
@@ -253,6 +262,9 @@ export const conteudo = [
 			enviar: "Enviar",
 			mensagemFinal:
 				"¡Gracias por el mensaje! Me pondré en contacto con usted pronto! :)",
+
+			mensagemFinalTemporaria:
+				"Por favor contácteme directamente a través de WhatsApp, +55 27 98149 1002, o envíe un correo electrónico a ramonfrombr@gmail.com",
 		},
 	},
 	{
@@ -336,6 +348,8 @@ export const conteudo = [
 			mensagem: "Message",
 			enviar: "Envoyer",
 			mensagemFinal: "Merci pour la message!",
+			mensagemFinalTemporaria:
+				"Veuillez me contacter directement via WhatsApp, +55 27 98149 1002, ou envoyer un e-mail à ramonfrombr@gmail.com",
 		},
 	},
 ];
@@ -346,25 +360,6 @@ export const portfolioDestaque = [
 		titulo: "Tesla Clone",
 		img: tesla,
 		link: "https://tesla-clone-f64c8.web.app/",
-	},
-	{
-		id: 2,
-		titulo: "Trading App",
-		img: impera,
-		link: "https://imperatrading.web.app/",
-	},
-	{
-		id: 3,
-		titulo: "Bakery Website",
-		img: omelhor,
-		link: "https://melhordefeurosa.web.app",
-	},
-
-	{
-		id: 4,
-		titulo: "WhatsApp Clone",
-		img: whatsapp,
-		link: "https://whatsapp-clone-gamma-seven.vercel.app/",
 	},
 ];
 
@@ -377,23 +372,26 @@ export const portfolioWeb = [
 	},
 	{
 		id: 2,
+		titulo: "WhatsApp Clone",
+		img: whatsapp,
+		link: "https://whatsapp-clone-gamma-seven.vercel.app/",
+	},
+	{
+		id: 3,
 		titulo: "Trading App",
 		img: impera,
 		link: "https://imperatrading.web.app/",
 	},
+
+	/*
 	{
-		id: 3,
+		id: 4,
 		titulo: "Bakery Website",
 		img: omelhor,
 		link: "https://melhordefeurosa.web.app",
 	},
 
-	{
-		id: 4,
-		titulo: "WhatsApp Clone",
-		img: whatsapp,
-		link: "https://whatsapp-clone-gamma-seven.vercel.app/",
-	},
+	
 	/*
 	{
 		id: 5,
@@ -408,73 +406,13 @@ export const portfolioWeb = [
     */
 ];
 
-export const portfolioMobile = [
+export const portfolioReactNative = [
 	{
 		id: 1,
-		titulo: "Uber Clone",
-		img: "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
-	},
-	{
-		id: 2,
-		titulo: "Tesla Clone",
-		img: "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
-	},
-	{
-		id: 3,
-		titulo: "Uber Eats Clone",
-		img: "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
-	},
-	{
-		id: 4,
-		titulo: "Instagram Clone",
-		img: "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
-	},
-	{
-		id: 5,
-		titulo: "Tinder Clone",
-		img: "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
-	},
-	{
-		id: 6,
-		titulo: "Signal Clone",
-		img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+		titulo: "Criptocurrency App",
+		img: cryptomobile,
 	},
 ];
-
-/*
-export const portfolioDesign = [
-	{
-		id: 1,
-		titulo: "Design Social Media App",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-	},
-	{
-		id: 2,
-		titulo: "Design Rampa UI Design",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-	},
-	{
-		id: 3,
-		titulo: "Design E-commerce Web Design",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-	},
-	{
-		id: 4,
-		titulo: "Design Relax Mobile App",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-	},
-	{
-		id: 5,
-		titulo: "Design Keser Web Design",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-	},
-	{
-		id: 6,
-		titulo: "Design Banking App",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-	},
-];
-*/
 
 export const portfolioConteudo = [
 	{
@@ -513,3 +451,42 @@ export const portfolioConteudo = [
 		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
 	},*/
 ];
+
+/*
+
+export const portfolioReact = [
+{
+		id: 1,
+		titulo: "",
+		img: "",
+	},  
+];
+
+
+export const portfolioFlask = [
+{
+		id: 1,
+		titulo: "",
+		img: "",
+	},
+];
+
+
+export const portfolioDjango = [
+	{
+		id: 1,
+		titulo: "",
+		img: "",
+	},
+];
+
+
+export const portfolioPHP = [
+{
+		id: 1,
+		titulo: "",
+		img: "",
+	},
+];
+
+*/

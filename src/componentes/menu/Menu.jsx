@@ -28,13 +28,14 @@ export default function Menu({ idioma, menuAberto, definirMenuAberto }) {
                         texto={idioma.projetos}
                         definirMenuAberto={definirMenuAberto}
                     />
-                */}
+                
 
 				<LinkMenu
 					id={"referencias"}
 					texto={idioma.referencias}
 					definirMenuAberto={definirMenuAberto}
 				/>
+                */}
 
 				<LinkMenu
 					id={"contato"}

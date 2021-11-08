@@ -1,18 +1,15 @@
-$corPrincipal: #15023a;
+$corPrincipal: #00227e;
 
 $largura: 728px;
 
 @mixin mobile {
-    @media (max-width: #{$largura}) {
-        @content
-    }
+	@media (max-width: #{$largura}) {
+		@content;
+	}
 }
-
 
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    overflow-x: hidden;
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	overflow-x: hidden;
 }
-
-

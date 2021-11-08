@@ -18,7 +18,7 @@ export default function Contato({ idioma }) {
 			<div className="direita">
 				<h2 style={{ marginBottom: "4em" }}>{idioma.contato}</h2>
 
-				<h4>Please send an email to ramonfrombr@gmail.com</h4>
+				<p>{idioma.mensagemFinalTemporaria}</p>
 
 				{/*
 
