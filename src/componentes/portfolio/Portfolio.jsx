@@ -73,7 +73,7 @@ export default function Portfolio({ idioma }) {
 
 	return (
 		<div className="portfolio" id="portfolio">
-			<h1>Portfolio</h1>
+			<h1 style={{ overflow: 'visible' }}>Portfolio</h1>
 
 			<ul>
 				{lista.map((item) => (
@@ -84,6 +84,7 @@ export default function Portfolio({ idioma }) {
 						ativo={selecionado === item.id}
 						icone={item.icone}
 						definirSelecionado={definirSelecionado}
+                        
 					/>
 				))}
 			</ul>
