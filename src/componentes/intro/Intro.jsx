@@ -24,7 +24,7 @@ import react from "../../imagens/react.png";
 import redux from "../../imagens/redux.png";
 import sass from "../../imagens/sass.png";
 import styledcomponents from "../../imagens/styledcomponents.png";
-import { configureStore } from "@reduxjs/toolkit";
+
 
 export default function Intro({ idioma }) {
 	/*

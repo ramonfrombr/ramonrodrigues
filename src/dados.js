@@ -2,6 +2,8 @@ import tesla from "./imagens/tesla-web.png";
 import impera from "./imagens/impera-web.png";
 import omelhor from "./imagens/omelhor-web.png";
 import whatsapp from "./imagens/whatsapp-web.png";
+import imperapainel from "./imagens/impera-painel-web.png";
+import imperaadmin from "./imagens/impera-admin-web.png";
 
 import cryptomobile from "./imagens/crypto-mobile.png";
 
@@ -382,22 +384,22 @@ export const portfolioWeb = [
 		img: impera,
 		link: "https://imperatrading.web.app/",
 	},
-
-	/*
+	
 	{
 		id: 4,
-		titulo: "Bakery Website",
-		img: omelhor,
-		link: "https://melhordefeurosa.web.app",
+		titulo: "Trading App User Dashboard",
+		img: imperapainel,
+		link: "https://impera-painel.web.app/",
 	},
 
-	
-	/*
 	{
 		id: 5,
-		titulo: "WhatsApp Clone",
-		img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
+		titulo: "Trading App Admin Dashboard",
+		img: imperaadmin,
+        link: "https://impera-admin.web.app/",
 	},
+
+    /*
 	{
 		id: 6,
 		titulo: "YouTube Clone",

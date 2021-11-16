@@ -16,33 +16,10 @@ export default function Contato({ idioma }) {
 			</div>
 
 			<div className="direita">
-				<h2 style={{ marginBottom: "4em" }}>{idioma.contato}</h2>
+				<h2 style={{ marginBottom: "1em" }}>{idioma.contato}</h2>
 
 				<p>{idioma.mensagemFinalTemporaria}</p>
 
-				{/*
-
-
-<form action="" onSubmit={naoRecarregarPagina}>
-					<input type="email" placeholder={idioma.email} />
-
-					<textarea
-						placeholder={idioma.mensagem}
-						name=""
-						id=""
-						cols="30"
-						rows="10"
-					></textarea>
-
-					<button>{idioma.enviar}</button>
-				</form>
-
-				<p style={{ color: "green" }}>
-					{mensagem ? <span>{idioma.mensagemFinal}</span> : <span>&nbsp;</span>}
-				</p>
-
-                    
-                     */}
 			</div>
 		</div>
 	);
