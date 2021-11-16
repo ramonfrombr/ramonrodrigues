@@ -4,6 +4,7 @@ import omelhor from "./imagens/omelhor-web.png";
 import whatsapp from "./imagens/whatsapp-web.png";
 import imperapainel from "./imagens/impera-painel-web.png";
 import imperaadmin from "./imagens/impera-admin-web.png";
+import cs50pt from "./imagens/cs50pt-web.png";
 
 import cryptomobile from "./imagens/crypto-mobile.png";
 
@@ -399,6 +400,24 @@ export const portfolioWeb = [
         link: "https://impera-admin.web.app/",
 	},
 
+    {
+		id: 6,
+		titulo: "CS50x em Português (Harvard Course)",
+		img: cs50pt,
+        link: "https://cs50xemportugues.github.io/",
+	},
+    {
+		id: 7,
+		titulo: "CS50x en Español (Harvard Course)",
+		img: cs50pt,
+        link: "https://cs50xenespanol.github.io/2021",
+	},
+    {
+		id: 8,
+		titulo: "CS50x en Français (Harvard Course)",
+		img: cs50pt,
+        link: "https://cs50xenfrancais.github.io/2021",
+	},
     /*
 	{
 		id: 6,
