@@ -1,3 +1,5 @@
+import React from 'react';
+
 import tesla from "./imagens/tesla-web.png";
 import impera from "./imagens/impera-web.png";
 import omelhor from "./imagens/omelhor-web.png";
@@ -14,6 +16,30 @@ import aprendaagora from "./imagens/aprendaagora-conteudo.png";
 import cs50 from "./imagens/cs50-conteudo.png";
 
 import fernando from "./imagens/fernando.jpg";
+
+import {FaReact, FaNodeJs, FaSass} from 'react-icons/fa';
+
+import {
+    SiStyledcomponents,
+    SiFlask,
+    SiDjango,
+    SiPhp,
+    SiJavascript,
+    SiPython,
+    SiReact,
+    SiRedux,
+    SiMaterialui,
+    SiGit,
+    SiHeroku,
+    SiFirebase,
+    FaAws,
+    SiPostgresql,
+    SiMysql,
+    SiMongodb,
+    SiCss3,
+    SiHtml5
+} from 'react-icons/si';
+
 
 export const conteudo = [
 	{
@@ -363,6 +389,7 @@ export const portfolioDestaque = [
 	{
 		id: 1,
 		titulo: "Tesla Clone",
+        icones: <SiReact/>,
 		img: tesla,
 		link: "https://tesla-clone-f64c8.web.app/",
 	},
@@ -372,18 +399,21 @@ export const portfolioWeb = [
 	{
 		id: 1,
 		titulo: "Tesla Clone",
+        icones: <SiReact/>,
 		img: tesla,
 		link: "https://tesla-clone-f64c8.web.app/",
 	},
 	{
 		id: 2,
 		titulo: "WhatsApp Clone",
+        icones: <SiReact/>,
 		img: whatsapp,
 		link: "https://whatsapp-clone-gamma-seven.vercel.app/",
 	},
 	{
 		id: 3,
 		titulo: "Trading App",
+        icones: <SiReact/>,
 		img: impera,
 		link: "https://imperatrading.web.app/",
 	},
@@ -391,6 +421,7 @@ export const portfolioWeb = [
 	{
 		id: 4,
 		titulo: "Trading App User Dashboard",
+        icones: <SiReact/>,
 		img: imperapainel,
 		link: "https://impera-painel.web.app/",
 	},
@@ -398,6 +429,7 @@ export const portfolioWeb = [
 	{
 		id: 5,
 		titulo: "Trading App Admin Dashboard",
+        icones: <SiReact/>,
 		img: imperaadmin,
         link: "https://impera-admin.web.app/",
 	},
@@ -405,18 +437,21 @@ export const portfolioWeb = [
     {
 		id: 6,
 		titulo: "CS50x em Português (Harvard Course)",
+        icones: <SiFlask/>,
 		img: cs50pt,
         link: "https://cs50xemportugues.github.io/",
 	},
     {
 		id: 7,
 		titulo: "CS50x en Español (Harvard Course)",
+        icones: <SiFlask/>,
 		img: cs50es,
         link: "https://cs50xenespanol.github.io/2021",
 	},
     {
 		id: 8,
 		titulo: "CS50x en Français (Harvard Course)",
+        icones: <SiFlask/>,
 		img: cs50fr,
         link: "https://cs50xenfrancais.github.io/2021",
 	},
@@ -433,6 +468,7 @@ export const portfolioReactNative = [
 	{
 		id: 1,
 		titulo: "Criptocurrency App",
+        icones: <SiReact/>,
 		img: cryptomobile,
 	},
 ];

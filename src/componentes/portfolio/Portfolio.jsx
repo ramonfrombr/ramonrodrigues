@@ -8,6 +8,7 @@ import {
 	FaNewspaper,
 } from "react-icons/fa";
 
+
 import ItemPortfolio from "../itemportfolio/ItemPortfolio";
 
 import "./portfolio.scss";
@@ -93,7 +94,8 @@ export default function Portfolio({ idioma }) {
 				{dados.map((dado) => (
 					<a href={dado.link} target="_blank" className="item" key={dado.id}>
 						<img src={dado.img} alt="" />
-						<h3 style={{ textAlign: "center" }}>{dado.titulo}</h3>
+						<h3 style={{ textAlign: "center" }}>{dado.titulo}<br/>{dado.icones}</h3>
+                        
 					</a>
 				))}
 			</div>
