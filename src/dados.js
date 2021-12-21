@@ -1,6 +1,7 @@
 import React from 'react';
 
 import tesla from "./imagens/tesla-web.png";
+import aprendaagoraweb from "./imagens/aprendaagora-web.png";
 import impera from "./imagens/impera-web.png";
 import omelhor from "./imagens/omelhor-web.png";
 import whatsapp from "./imagens/whatsapp-web.png";
@@ -123,7 +124,7 @@ export const conteudo = [
 			enviar: "Send",
 			mensagemFinal: "Thank you for the message! I will contact you soon :)",
 			mensagemFinalTemporaria:
-				"Please contact me directly via WhatsApp, +55 27 98149 1002, or send an email to ramonfrombr@gmail.com",
+				"Send Email to ramonfrombr@gmail.com",
 		},
 	},
 	{
@@ -209,7 +210,7 @@ export const conteudo = [
 				"Obrigado pela mensagem! Entrarei em contato com você em breve :)",
 
 			mensagemFinalTemporaria:
-				"Por favor, contate-me diretamente através do WhatsApp, +55 27 98149 1002, ou envie-me um email para ramonfrombr@gmail.com",
+				"Enviar Email para ramonfrombr@gmail.com",
 		},
 	},
 	{
@@ -295,7 +296,7 @@ export const conteudo = [
 				"¡Gracias por el mensaje! Me pondré en contacto con usted pronto! :)",
 
 			mensagemFinalTemporaria:
-				"Por favor contácteme directamente a través de WhatsApp, +55 27 98149 1002, o envíe un correo electrónico a ramonfrombr@gmail.com",
+				"Enviar E-mail a ramonfrombr@gmail.com",
 		},
 	},
 	{
@@ -374,13 +375,13 @@ export const conteudo = [
 			],
 		},
 		contato: {
-			contato: "Contato",
+			contato: "Contact",
 			email: "E-mail",
 			mensagem: "Message",
 			enviar: "Envoyer",
 			mensagemFinal: "Merci pour la message!",
 			mensagemFinalTemporaria:
-				"Veuillez me contacter directement via WhatsApp, +55 27 98149 1002, ou envoyer un e-mail à ramonfrombr@gmail.com",
+				"Envoyer E-mail à ramonfrombr@gmail.com",
 		},
 	},
 ];
@@ -410,16 +411,23 @@ export const portfolioWeb = [
 		img: whatsapp,
 		link: "https://whatsapp-clone-gamma-seven.vercel.app/",
 	},
-	{
+    {
 		id: 3,
-		titulo: "Trading App",
+		titulo: "Education Platform",
+        icones: <SiFlask/>,
+		img: aprendaagoraweb,
+		link: "https://aprendaagora.herokuapp.com",
+	},
+	{
+		id: 5,
+		titulo: "Trading App Landing Page",
         icones: <SiReact/>,
 		img: impera,
 		link: "https://imperatrading.web.app/",
 	},
 	
 	{
-		id: 4,
+		id: 6,
 		titulo: "Trading App User Dashboard",
         icones: <SiReact/>,
 		img: imperapainel,
@@ -427,7 +435,7 @@ export const portfolioWeb = [
 	},
 
 	{
-		id: 5,
+		id: 7,
 		titulo: "Trading App Admin Dashboard",
         icones: <SiReact/>,
 		img: imperaadmin,
@@ -435,33 +443,26 @@ export const portfolioWeb = [
 	},
 
     {
-		id: 6,
+		id: 8,
 		titulo: "CS50x em Português (Harvard Course)",
         icones: <SiFlask/>,
 		img: cs50pt,
         link: "https://cs50xemportugues.github.io/",
 	},
     {
-		id: 7,
+		id: 9,
 		titulo: "CS50x en Español (Harvard Course)",
         icones: <SiFlask/>,
 		img: cs50es,
         link: "https://cs50xenespanol.github.io/2021",
 	},
     {
-		id: 8,
+		id: 10,
 		titulo: "CS50x en Français (Harvard Course)",
         icones: <SiFlask/>,
 		img: cs50fr,
         link: "https://cs50xenfrancais.github.io/2021",
 	},
-    /*
-	{
-		id: 6,
-		titulo: "YouTube Clone",
-		img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
-	},
-    */
 ];
 
 export const portfolioReactNative = [

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./contato.scss";
+import styled from 'styled-components';
 
 export default function Contato({ idioma }) {
 	const [mensagem, definirMensagem] = useState();
@@ -18,9 +19,22 @@ export default function Contato({ idioma }) {
 			<div className="direita">
 				<h2 style={{ marginBottom: "1em" }}>{idioma.contato}</h2>
 
-				<p>{idioma.mensagemFinalTemporaria}</p>
+                <BotaoEmail href="mailto:ramonfrombr@gmail.com">
+                    {idioma.mensagemFinalTemporaria}
+                </BotaoEmail>
 
 			</div>
 		</div>
 	);
 }
+
+
+const BotaoEmail = styled.a`
+    background-color: #002fff;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius:3px;
+    font-weight: bold;
+
+`;

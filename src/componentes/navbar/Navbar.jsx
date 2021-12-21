@@ -25,11 +25,6 @@ export default function Navbar({
 					</a>
 
 					<div className="containerItem">
-						<FaWhatsapp className="icone" />
-						<span>+55 27 98149-1002</span>
-					</div>
-
-					<div className="containerItem">
 						<FaEnvelope className="icone" />
 						<span>ramonfrombr@gmail.com</span>
 					</div>
@@ -46,15 +41,6 @@ export default function Navbar({
 							href="https://www.linkedin.com/in/ramon-rodrigues-533021151/"
 						>
 							<FaLinkedin className="icone" />
-						</a>
-					</div>
-
-					<div className="containerItem">
-						<a
-							target="_blank"
-							href="https://www.instagram.com/ramonrodriguesomero/"
-						>
-							<FaInstagram className="icone" />
 						</a>
 					</div>
 
