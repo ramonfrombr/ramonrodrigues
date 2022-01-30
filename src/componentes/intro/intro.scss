@@ -4,6 +4,8 @@
 	background-color: #f6f6f6;
 	display: flex;
 	margin-bottom: 100px;
+	width: 100%;
+	height: calc(100vh - 70px);
 
 	@include mobile {
 		flex-direction: column;
